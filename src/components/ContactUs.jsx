@@ -21,7 +21,7 @@ function ContactUs() {
           bg: "gray.600",
         }}
       >
-        <a href="tel:123-456-7890">+256 771 077 244</a>
+        <a href="tel:+256 771 077 244">+256 771 077 244</a>
       </Button>
       {/* icons  */}
       <HStack>
