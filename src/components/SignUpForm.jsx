@@ -41,11 +41,11 @@ function SignUpForm({ status, message, onValidated }) {
     }
   };
   return (
-    <VStack w="100%">
+    <VStack w="100%" pt={[8, 0]}>
       <Heading color="white" size="md" zIndex={2} align="center">
         Get notified once we launch
       </Heading>
-      <SimpleGrid w="full" columns={3} columnGap={3} rowGap={6}>
+      <SimpleGrid w="full" columns={3} columnGap={6} rowGap={6}>
         <GridItem colSpan={2}>
           <FormControl>
             <Input
@@ -74,15 +74,18 @@ function SignUpForm({ status, message, onValidated }) {
             </Button>
           </FormControl>
         </GridItem>
-        <GridItem colSpan={3}>
-          <FormControl>
-            <FormHelperText color="green.300">{successMessage}</FormHelperText>
-          </FormControl>
-        </GridItem>
+        {successMessage && (
+          <GridItem colSpan={3}>
+            <FormControl>
+              <FormHelperText color="green.300">
+                {successMessage}
+              </FormHelperText>
+            </FormControl>
+          </GridItem>
+        )}
       </SimpleGrid>
       <Text
         fontSize="14px"
-        lineHeight="24px"
         color="#ADADAD"
         noOfLines={[2, 1]}
         textAlign="center"
@@ -90,30 +93,6 @@ function SignUpForm({ status, message, onValidated }) {
         We are revolutionizing the way you book your stays, tours & travels
       </Text>
     </VStack>
-    // <FormControl w="full" onSubmit={handleSubmit}>
-    //   <HStack w="100%">
-    //     <Input
-    //       type="email"
-    //       //   isInvalid={error ? true : false}
-    //       bg="gray.300"
-    //       placeholder="Enter your email here"
-    //       fontSize="14px"
-    //       size="lg"
-    //       htmlSize={2}
-    //       mx="0px"
-    //       onChange={(e) => setEmail(e.target.value)}
-    //     />
-    //     <Button
-    //       onClick={handleSubmit}
-    //       type="submit"
-    //       colorScheme="orange"
-    //       size="lg"
-    //       fontSize="14px"
-    //     >
-    //       NOTIFY ME
-    //     </Button>
-    //   </HStack>
-    // </FormControl>
   );
 }
 
