@@ -4,7 +4,8 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 import SignUpForm from "./SignUpForm";
 
 function MailChimpFormContainer() {
-  const url = import.meta.env.VITE_MAILCHIMP_URL;
+  const url =
+    "https://gmail.us17.list-manage.com/subscribe/post?u=d1b411008f2633309a39b2fa0&amp;id=a87051a8bd";
   return (
     <Flex w="100%">
       <MailchimpSubscribe
