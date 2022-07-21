@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
   FaInbox,
+  FaTelegram,
 } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -34,7 +35,7 @@ function ContactUs() {
           variant="outline"
           color="white"
           _hover={{
-            bg: "telegram.500",
+            bg: "red.400",
           }}
           isRound
           onClick={() => {
@@ -74,6 +75,19 @@ function ContactUs() {
             bg: "purple.500",
           }}
           onClick={() => window.open("https://instagram.com/yallahuts")}
+        />
+        <IconButton
+          aria-label="telegram"
+          icon={<FaTelegram />}
+          variant="outline"
+          color="white"
+          isRound
+          _hover={{
+            bg: "telegram.500",
+          }}
+          onClick={() => {
+            window.location.href = "https://telegram.me/yallahuts";
+          }}
         />
         <IconButton
           aria-label="whatsapp"
