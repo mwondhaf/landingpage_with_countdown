@@ -12,7 +12,7 @@ function Logo() {
       <Flex w="80px">
         <Image src={whiteLogo} alignSelf="center" />
       </Flex>
-      <Heading size="xs" p={1} m={0} color="whiteAlpha.800">
+      <Heading size="xs" p={1} m={0} color="whiteAlpha.900">
         YALLAHUTS
       </Heading>
     </Flex>

@@ -20,7 +20,7 @@ function Landing() {
       w={"full"}
       bgSize="cover"
       pt={[1, 2]}
-      pb={[18, 1]}
+      pb={[24, 1]}
       overflowY="scroll"
     >
       <Container centerContent h="100%">
