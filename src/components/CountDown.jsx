@@ -50,7 +50,7 @@ function CountDown() {
   var daysPercent = (countDownDate.diff(moment(), "days") / 90) * 100;
 
   return (
-    <HStack>
+    <HStack justify="center">
       <CircularProgress
         capIsRound
         value={daysPercent}

@@ -5,15 +5,18 @@ import {
   FaTwitter,
   FaInstagram,
   FaPhoneAlt,
+  FaWhatsapp,
+  FaInbox,
 } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 function ContactUs() {
   return (
     <VStack>
       <Text fontSize="md" color="white" pt={4}>
-        Call us today
+        Stay in touch
       </Text>
-      <Button
+      {/* <Button
         leftIcon={<FaPhoneAlt />}
         variant="ghost"
         color="white"
@@ -22,9 +25,23 @@ function ContactUs() {
         }}
       >
         <a href="tel:+256 771 077 244">+256 771 077 244</a>
-      </Button>
+      </Button> */}
       {/* icons  */}
       <HStack>
+        <IconButton
+          aria-label="email"
+          icon={<MdOutlineEmail />}
+          variant="outline"
+          color="white"
+          _hover={{
+            bg: "telegram.500",
+          }}
+          isRound
+          onClick={() => {
+            // mail to yallahuts@gmail.com
+            window.location.href = "mailto:" + "yallahuts@gmail.com";
+          }}
+        />
         <IconButton
           aria-label="facebook"
           icon={<FaFacebookF />}
@@ -48,7 +65,7 @@ function ContactUs() {
           onClick={() => window.open("https://twitter.com/yallahuts")}
         />
         <IconButton
-          aria-label="twitter"
+          aria-label="instagram"
           icon={<FaInstagram />}
           variant="outline"
           color="white"
@@ -57,6 +74,19 @@ function ContactUs() {
             bg: "purple.500",
           }}
           onClick={() => window.open("https://instagram.com/yallahuts")}
+        />
+        <IconButton
+          aria-label="whatsapp"
+          icon={<FaWhatsapp />}
+          variant="outline"
+          color="white"
+          isRound
+          _hover={{
+            bg: "whatsapp.500",
+          }}
+          onClick={() => {
+            window.location.href = "https://wa.me/256753768771";
+          }}
         />
       </HStack>
     </VStack>

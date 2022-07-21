@@ -1,4 +1,4 @@
-import { Flex, Heading, Image } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import whiteLogo from "../assets/images/logowhite.png";
 function Logo() {
@@ -9,10 +9,10 @@ function Logo() {
       alignItems="center"
       py={[6, 0]}
     >
-      <Flex w="60px" h="60px">
+      <Flex w="80px">
         <Image src={whiteLogo} alignSelf="center" />
       </Flex>
-      <Heading size="sm" color="whiteAlpha.800">
+      <Heading size="xs" p={1} m={0} color="whiteAlpha.800">
         YALLAHUTS
       </Heading>
     </Flex>

@@ -1,5 +1,6 @@
 import {
   Button,
+  Flex,
   FormControl,
   FormHelperText,
   GridItem,
@@ -41,19 +42,19 @@ function SignUpForm({ status, message, onValidated }) {
     }
   };
   return (
-    <VStack w="100%" pt={[8, 0]}>
-      <Heading color="white" size="md" zIndex={2} align="center">
+    <VStack direction="column" w="100%" pt={[8, 0]}>
+      <Heading color="whiteAlpha.800" size="md" zIndex={2} align="center">
         Get notified once we launch
       </Heading>
-      <SimpleGrid w="full" columns={3} columnGap={6} rowGap={6}>
-        <GridItem colSpan={2}>
+      <SimpleGrid w="full" columns={[3, 4]} columnGap={2} rowGap={6} py={2}>
+        <GridItem colSpan={[2, 3]}>
           <FormControl>
             <Input
               type="email"
               bg="gray.300"
               placeholder="Enter your email here"
               fontSize="14px"
-              size="lg"
+              size="md"
               htmlSize={2}
               mx="0px"
               onChange={(e) => setEmail(e.target.value)}
@@ -66,8 +67,8 @@ function SignUpForm({ status, message, onValidated }) {
               onClick={handleSubmit}
               type="submit"
               colorScheme="orange"
-              size="lg"
-              fontSize="14px"
+              size="md"
+              fontSize="12px"
               w="100%"
             >
               NOTIFY ME
@@ -85,12 +86,12 @@ function SignUpForm({ status, message, onValidated }) {
         )}
       </SimpleGrid>
       <Text
-        fontSize="14px"
+        fontSize={"16px"}
         color="#ADADAD"
         noOfLines={[2, 1]}
         textAlign="center"
       >
-        We are revolutionizing the way you book your stays, tours & travels
+        We are tailoring your needs for the best experience in stays and tours
       </Text>
     </VStack>
   );
