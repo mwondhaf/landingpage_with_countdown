@@ -91,8 +91,8 @@ function SignUpForm({ status, message, onValidated }) {
         noOfLines={[2, 1]}
         textAlign="center"
       >
-        We are creating better and simplified experience in booking for tours &
-        stays
+        We are creating a better and simplified experience in booking for tours
+        & stays
       </Text>
     </VStack>
   );
