@@ -16,7 +16,7 @@ function CountDown() {
   const [daysToLaunch, setDaysToLaunch] = useState();
   const [monthsToLaunch, setMonthsToLaunch] = useState();
 
-  let countDownDate = moment("2022-07-19").add(3, "months");
+  let countDownDate = moment("2022-10-12").add(3, "months");
 
   useEffect(() => {
     var x = setInterval(() => {
